@@ -116,8 +116,8 @@ np.save("phase_array.npy",phase_train)
 np.save("wf_array.npy",wf_train)
 model = model = tf.keras.models.Sequential([
   tf.keras.layers.Dense(units = 64,input_shape=(wf_train[0].shape)),
-  tf.keras.layers.Dense(128, activation='relu'),
-  tf.keras.layers.Dense(128, activation='relu'),
+#  tf.keras.layers.Dense(128, activation='relu'),
+#  tf.keras.layers.Dense(128, activation='relu'),
   tf.keras.layers.Dense(128, activation='relu'),
   tf.keras.layers.Dropout(0.2),
   tf.keras.layers.Flatten(),
